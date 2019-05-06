@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# something
 themSV() {
   read -p "Nhap ten SV:" ten
   read -p "Nhap NTNS SV:" NTNS
