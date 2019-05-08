@@ -5,7 +5,6 @@
  */
 package Windows;
 
-import java.awt.MenuComponent;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,7 +13,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
 
 /**
  *
@@ -44,8 +42,8 @@ public class MyJInternalFrame extends javax.swing.JInternalFrame {
       while (rs.next()) {
         String maHV = rs.getString("MaHocVien");
         String tenHV = rs.getString("TenHocVien");
-        String cols[] = {maHV, tenHV};
-        tblModel.addRow(cols);
+        String row[] = {maHV, tenHV};
+        tblModel.addRow(row);
       }
 
       jTable1.setModel(tblModel);
